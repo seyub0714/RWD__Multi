@@ -3,5 +3,68 @@
 @import url("./theme.css");
 @import url("./base.css");
 
+/* Common Class */
+.default-layout{
+  max-width: var(--container-width);
+  margin-left: auto;
+  margin-right: auto;
+}
 
 
+body{
+  background-color: yellow;
+}
+
+.header{
+  background-color: orange;
+  height: 15vh;
+}
+
+.navigation{
+  background-color: silver;
+  height: 15vh;
+}
+
+.main{
+  background-color: purple;
+  height: 60vh;
+}
+
+.footer{
+  background-color: salmon;
+  height: 10vh;
+}
+
+@media (min-width: 320px) and (max-width: 767px){
+  body{
+    background-color: pink;
+  }
+}
+
+@media (min-width: 768px) {
+  body{
+    background-color: skyblue;
+  }
+
+  .buttonWrapper{
+    display: none;
+  }
+
+  /* .header, .main{
+    max-width: var(--container-width);
+    margin-left: auto;
+    margin-right: auto;
+  } */
+  .header{
+    display: flex;
+    justify-content: center;
+  }
+
+  .header__inner{
+    max-width: var(--container-width);
+    width: var(--container-width);
+    background-color: red;
+    height: 100%;
+  }
+
+}
