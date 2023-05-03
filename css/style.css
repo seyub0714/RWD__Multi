@@ -10,10 +10,11 @@
   margin-right: auto;
 }
 
-
 body{
   background-color: yellow;
 }
+
+/* 공통 스타일 */
 
 .header{
   background-color: orange;
@@ -35,12 +36,14 @@ body{
   height: 10vh;
 }
 
+/* 모바일 디바이스 */
 @media (min-width: 320px) and (max-width: 767px){
   body{
     background-color: pink;
   }
 }
 
+/* 데스크탑 디바이스 */
 @media (min-width: 768px) {
   body{
     background-color: skyblue;
@@ -50,23 +53,9 @@ body{
     display: none;
   }
 
-  /* .header, .main{
+  .header, .main{
     max-width: var(--container-width);
     margin-left: auto;
     margin-right: auto;
-  } */
-  .header{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
   }
-
-  .header__inner{
-    max-width: var(--container-width);
-    width: 100%;
-    height: 100%;
-    background-color: red;
-  }
-
 }
