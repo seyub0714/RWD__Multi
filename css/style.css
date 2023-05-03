@@ -36,6 +36,14 @@ body{
 .memberOnly{
   order: -1;
   width: 100%;
+  background-color: green;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.memberOnly li{
+  display: flex;
+  align-items: center;
 }
 
 /* 공동 검색 폼 */
