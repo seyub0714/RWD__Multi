@@ -11,6 +11,12 @@ body{
 }
 
 /* 공통 스타일 */
+
+/* 공통 레이아웃 */
+.appHeader{
+  padding: var(--spacing-base) var(--spacing-lg);
+}
+
 /* 공통 헤더 스타일 */
 .appHeader{
   background-color: orange;
@@ -24,20 +30,17 @@ body{
 /* 공통 로고 */
 .logo{
   width: 100%;
-  background-color: yellow;
 }
 
 /* 공통 멤버 링크 모음 */
 .memberOnly{
   order: -1;
   width: 100%;
-  background-color: tomato;
 }
 
 /* 공동 검색 폼 */
 .searchForm{
   width: 100%;
-  background-color: aqua;
 }
 
 
@@ -61,6 +64,12 @@ body{
   body{
     background-color: pink;
   }
+
+  /* 모바일 헤더 */
+  .appHeader{
+    background-color: var(--primary-color);
+    color: #fff;
+  }
 }
 
 /* 데스크탑 디바이스 */
@@ -79,7 +88,7 @@ body{
     position: absolute;
     width: auto;
     top: 50%;
-    left: 20px;
+    left: var(--spacing-lg);
     transform: translateY(-50%);
   }
 
