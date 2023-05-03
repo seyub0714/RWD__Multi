@@ -45,11 +45,8 @@ body{
 /* 공통 헤더 스타일 */
 .appHeader{
   background-color: orange;
-  height: 15vh;
   display: flex;
   flex-flow: row wrap;
-  justify-content: flex-start;
-  align-items: stretch;
 }
 
 /* 공통 로고 */
@@ -76,6 +73,21 @@ body{
   width: 100%;
 }
 
+.searchForm__group{
+  background-color: greenyellow;
+  display: flex;
+  flex-flow: row nowrap;
+  gap: var(--spacing-base);
+}
+
+.formInput{
+  border: 5px solid red;
+  flex-grow: 1;
+}
+
+.formInput__input{
+  width: 100%;
+}
 
 .appNavigation{
   background-color: silver;
