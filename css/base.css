@@ -27,7 +27,7 @@ body {
 }
 
 /* 유연한 미디어 */
-/* img {
+img {
   max-width: 100%;
   height: auto;
 }
@@ -35,4 +35,4 @@ body {
 video {
   width: 100%;
   height: auto;
-} */
+}
