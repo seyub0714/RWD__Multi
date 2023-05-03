@@ -3,12 +3,8 @@
 @import url("./theme.css");
 @import url("./base.css");
 
-/* Common Class */
-.default-layout{
-  max-width: var(--container-width);
-  margin-left: auto;
-  margin-right: auto;
-}
+/* 공통 클래스 모듈 */
+
 
 body{
   background-color: yellow;
@@ -16,7 +12,7 @@ body{
 
 /* 공통 스타일 */
 /* 공통 헤더 스타일 */
-.header{
+.appHeader{
   background-color: orange;
   height: 15vh;
   display: flex;
@@ -45,17 +41,17 @@ body{
 }
 
 
-.navigation{
+.appNavigation{
   background-color: silver;
   height: 15vh;
 }
 
-.main{
+.appMain{
   background-color: purple;
   height: 60vh;
 }
 
-.footer{
+.appFooter{
   background-color: salmon;
   height: 10vh;
 }
@@ -74,7 +70,7 @@ body{
   }
 
   /* 데스크탑 헤더 */
-  .header{
+  .appHeader{
     position: relative;
   }
 
@@ -97,7 +93,7 @@ body{
     display: none;
   }
 
-  .header, .main{
+  .appHeader, .appMain{
     max-width: var(--container-width);
     margin-left: auto;
     margin-right: auto;
