@@ -122,16 +122,24 @@ input[type="search"] {
 
 /* 공통 메인 콘텐츠 */
 .appMain{
+  width: 100%;
   padding: var(--spacing-base) var(--spacing-lg);
-  display: grid;
+  display: flex;
+  flex-flow: row wrap;
+  /* display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
   grid-template-areas: "book"
                        "news"
                        "board"
                        "favorite"
-                       "twitter";
+                       "twitter"; */
 }
+
+.book, .news, .board, .favorite, .twitter{
+  width: 100%;
+}
+
 
 /* 공통 메인 콘텐츠 섹션 제목 */
 .appMain [class*="__title"] {
@@ -319,9 +327,15 @@ input[type="search"] {
   margin-top: var(--spacing-xs);
 }
 
-.appFooter{
-  background-color: salmon;
-  height: 10vh;
+/* 공통 푸터 */
+.appFooter {
+  background: var(--primary-color);
+  color: var(--white);
+  padding: var(--spacing-xl) var(--spacing-lg);
+}
+
+.address {
+  margin-bottom: var(--spacing-base);
 }
 
 /* 319px 이하 디바이스 */
@@ -449,6 +463,12 @@ input[type="search"] {
     font-weight: 700;
     padding: var(--spacing-xs);
   }
+
+  /* 모바일 푸터 */
+  .address {
+    display: flex;
+    flex-flow: column nowrap;
+  }
 }
 
 /* 데스크탑 디바이스 */
@@ -511,12 +531,15 @@ input[type="search"] {
 
   /* 데스크탑 메인 콘텐츠 */
   .appMain{
+    display: grid;
     gap: var(--spacing-md);
     grid-template-columns: repeat(12, 1fr);
     grid-template-areas: "news news news news news news news news news news news news"
                          "book book book book twitter twitter twitter twitter twitter favorite favorite favorite"
                          "book book book book . board board board board board board board";
   }
-
-  
+  /* 데스크탑 푸터 */
+  .appFooter {
+    text-align: center;
+  }
 }
