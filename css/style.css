@@ -32,6 +32,29 @@
 }
 
 /* 공통 스타일 */
+/* 공통 반응형 iframe */
+.iframeWrapper {
+  position: relative;
+}
+
+.iframeRatio-4-3 {
+  aspect-ratio: 4/3;
+}
+
+.iframeRatio-16-9 {
+  aspect-ratio: 16/9;
+}
+
+.iframeWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
 
 /* 공통 레이아웃 */
 .appHeader{
