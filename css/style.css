@@ -96,6 +96,14 @@ input[type="search"] {
 .appMain{
   background-color: purple;
   height: 60vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "book"
+                       "news"
+                       "board"
+                       "favorite"
+                       "twitter";
 }
 
 .book{
@@ -112,6 +120,22 @@ input[type="search"] {
 }
 .twitter{
   background-color: gray;
+}
+
+.book{ 
+  grid-area: book;
+}
+.news{
+  grid-area: news;
+}
+.board{
+  grid-area: board;
+}
+.favorite{
+  grid-area: favorite;
+}
+.twitter{
+  grid-area: twitter;
 }
 
 .appFooter{
@@ -244,6 +268,16 @@ input[type="search"] {
     font-weight: 700;
     padding: var(--spacing-xs);
   }
+
+  /* 모바일 메인 콘텐츠 */
+  .appMain{
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-sm);
+    grid-template-areas: "book favorite"
+                         "book twitter"
+                         "book board"
+                         "news news";
+  }
 }
 
 /* 데스크탑 디바이스 */
@@ -307,23 +341,12 @@ input[type="search"] {
   /* 데스크탑 메인 콘텐츠 */
   .appMain{
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
     gap: var(--spacing-md);
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas: "news news news news news news news news news news news news"
+                         "book book book book twitter twitter twitter twitter twitter favorite favorite favorite"
+                         "book book book book . board board board board board board board";
   }
 
-  .book{
-    grid-area: 2 / 1 / 4 / 5;
-  }
-  .news{
-    grid-area: 1 / 1 / 2 / -1;
-  }
-  .board{
-    grid-area: 3 / 6 / 4 / span 7;
-  }
-  .favorite{
-    grid-area: 2 / 10 / 3 / span 3;
-  }
-  .twitter{
-    grid-area: 2 / 5 / 3 / span 5;
-  }
+  
 }
