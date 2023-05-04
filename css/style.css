@@ -92,9 +92,26 @@ input[type="search"] {
   padding: 0.125rem 0.75rem;
 }
 
+/* 공통 메인 콘텐츠 */
 .appMain{
   background-color: purple;
   height: 60vh;
+}
+
+.book{
+  background-color: yellow;
+}
+.news{
+  background-color: lime;
+}
+.board{
+  background-color: salmon;
+}
+.favorite{
+  background-color: aqua;
+}
+.twitter{
+  background-color: gray;
 }
 
 .appFooter{
