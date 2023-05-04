@@ -92,11 +92,6 @@ input[type="search"] {
   padding: 0.125rem 0.75rem;
 }
 
-/* 공통 내비게이션 */
-.appNavigation{
-  background-color: var(--secondary-color);
-}
-
 .appMain{
   background-color: purple;
   height: 60vh;
@@ -111,11 +106,19 @@ input[type="search"] {
 @media (max-width: 319px) {
   
   /* 319px 이하 내비게이션 */
-  .appNavigation{
+  .menu{
     background-color: var(--secondary-color);
     color: var(--white);
     font-size: var(--text-md);
-    font-weight: 900;
+    font-weight: 700;
+  }
+  .menu__list{
+    padding: var(--spacing-xs);
+  }
+
+  .menu__link{
+    display: block;
+    padding: var(--spacing-xs);
   }
 }
 
@@ -227,8 +230,29 @@ input[type="search"] {
     display: none;
   }
 
+  /* 데스크탑 메인 메뉴 */
+  .menu {
+    background: var(--secondary-color);
+    padding: var(--spacing-base) var(--spacing-lg);
+  }
+
+  .menu__list {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacing-md);
+  }
+
+  .menu__link {
+    font-size: var(--text-lg);
+    font-weight: 800;
+    color: var(--white);
+    text-shadow: 1px 1px 0 var(--black), -1px -1px 0 var(--black);
+  }
+
   /* 데스크탑 레이아웃 */
-  .appHeader, .appMain{
+  .appHeader, .menu__list, .appMain{
     max-width: var(--container-width);
     margin-left: auto;
     margin-right: auto;
