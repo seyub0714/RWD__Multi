@@ -268,16 +268,6 @@ input[type="search"] {
     font-weight: 700;
     padding: var(--spacing-xs);
   }
-
-  /* 모바일 메인 콘텐츠 */
-  .appMain{
-    grid-template-columns: 1fr 1fr;
-    gap: var(--spacing-sm);
-    grid-template-areas: "book favorite"
-                         "book twitter"
-                         "book board"
-                         "news news";
-  }
 }
 
 /* 데스크탑 디바이스 */
@@ -340,7 +330,6 @@ input[type="search"] {
 
   /* 데스크탑 메인 콘텐츠 */
   .appMain{
-    display: grid;
     gap: var(--spacing-md);
     grid-template-columns: repeat(12, 1fr);
     grid-template-areas: "news news news news news news news news news news news news"
