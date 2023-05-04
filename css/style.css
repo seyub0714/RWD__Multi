@@ -117,8 +117,7 @@ input[type="search"] {
 
 /* 공통 메인 콘텐츠 */
 .appMain{
-  background-color: purple;
-  height: 60vh;
+  padding: var(--spacing-base) var(--spacing-lg);
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
@@ -129,20 +128,62 @@ input[type="search"] {
                        "twitter";
 }
 
-.book{
-  background-color: yellow;
+/* 공통 메인 콘텐츠 섹션 제목 */
+.appMain [class*="__title"] {
+  margin-bottom: var(--spacing-base);
+  font-weight: 700;
+  font-size: var(--text-md);
 }
-.news{
-  background-color: lime;
+
+.appMain [class*="__enTitle"] {
+  font-weight: 400;
+  font-size: var(--text-base);
 }
-.board{
-  background-color: salmon;
+
+.sprite {
+  min-height: 3.75rem;
+  padding-left: 4rem;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  background-image: url(./../images/sprite_main.png);
+  background-repeat: no-repeat;
 }
-.favorite{
-  background-color: aqua;
+
+.spriteBook {
+  background-position: 0 0;
 }
-.twitter{
-  background-color: gray;
+
+.spriteNews {
+  background-position: 0 -230px;
+}
+
+.spriteBoard {
+  background-position: 0 -115px;
+}
+
+.spriteFavorite {
+  background-position: 0 -345px;
+}
+
+.spriteTwitter {
+  background-position: 0 -460px;
+}
+
+.accentBook {
+  color: var(--accent-book);
+}
+.accentNews {
+  color: var(--accent-news);
+}
+.accentBoard {
+  color: var(--accent-board);
+}
+.accentFavorite {
+  color: var(--accent-favorite);
+}
+.accentTwitter {
+  color: var(--accent-twitter);
 }
 
 .book{ 
