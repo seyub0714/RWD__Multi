@@ -3,6 +3,11 @@
 @import url("./theme.css");
 @import url("./base.css");
 
+/* 공통 아이콘 (Font Awesome) */
+.far {
+  margin-right: var(--spacing-xs);
+}
+
 /* 공통 클래스 모듈 */
 .button {
   cursor: pointer;
@@ -232,6 +237,13 @@ input[type="search"] {
 
 .ratingStar {
   font-size: var(--text-xl);
+}
+
+/* 공통 새소식 */
+.news__date {
+  display: block;
+  text-align: right;
+  margin-top: var(--spacing-xs);
 }
 
 
