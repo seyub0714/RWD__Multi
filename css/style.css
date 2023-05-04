@@ -198,6 +198,35 @@ input[type="search"] {
   .is--active .button--burgerBarBottom{
     transform: translateY(-50%) rotate(-45deg);
   }
+
+  /* 모바일 메인 메뉴 */
+  .menu__list {
+    background: var(--accent-opacity-color);
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 100vh;
+    backdrop-filter: blur(4px);
+    padding: var(--spacing-lg);
+    transform: translateX(-150%);
+  }
+
+  .menu__item {
+    border-bottom: 1px solid var(--silver);
+  }
+
+  .menu.is--active .menu__list {
+    transform: none;
+  }
+
+  .menu__link{
+    display: block;
+    font-size: var(--text-md);
+    font-weight: 700;
+    padding: var(--spacing-xs);
+  }
 }
 
 /* 데스크탑 디바이스 */
